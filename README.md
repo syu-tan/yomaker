@@ -32,7 +32,7 @@ OSX(Mac) と Ubuntu にて CPU 動作確認
 ```shell
 python generate.py --outdir=out --trunc=1 --seeds=56,1 --network=./weights/00020-256px-animeportrait.pkl
 ```
-[画像2](results/seed0001.png)
+![画像2](results/seed0001.png)
 
 - スタイルミキシング
 ```shell

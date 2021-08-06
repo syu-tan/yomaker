@@ -18,7 +18,7 @@ python version => 3.8
 pip install -r requirements.txt
 ```
 
-[学習済みモデル](https://drive.google.com/drive/folders/1tzZVrhRy1kM5zHKhcoF72aesV1UwYw3X?usp=sharing)(.pkl)をダウンロードして `weghts/` に格納する。
+[学習済みモデル](https://drive.google.com/drive/folders/1aKOc-CU6VYIdz_TbV2f70zjrnqdyB1ps)(.pkl)をダウンロードして `weghts/` に格納する。
 
 OSX(Mac) と Ubuntu にて CPU 動作確認
 

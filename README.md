@@ -2,7 +2,7 @@
 
 - 学習途中ですが、２次元イラストを学習させたのでモデルとデモの公開
 
-![画像1](results/seed0056.png)!
+![画像1](results/seed0056.png)
 
 嫁画像をたくさん作るぞ〜！ってことで **yomake**
 
@@ -47,10 +47,7 @@ python projector.py --outdir=out --target={探索したいい画像のパス} --
 
 VGG16 でレイテントを近似します。(なので時間かかります)
 
-
-<video width="256" height="256" controls>
-  <source src="results/proj.mp4" type="video/mp4">
-</video>
+https://user-images.githubusercontent.com/53329664/128550866-8b799ba2-a5e8-465e-bf8e-0a2242323e24.mp4
 
 
 

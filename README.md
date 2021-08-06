@@ -2,13 +2,13 @@
 
 - 学習途中ですが、２次元イラストを学習させたのでモデルとデモの公開
 
-![画像1](results/seed0056.png)![画像2](results/seed0001.png)
+![画像1](results/seed0056.png)!
 
 嫁画像をたくさん作るぞ〜！ってことで **yomake**
 
 GAN とかはマシンスペック求められたりするので気軽に楽しめない人のために
 
-![画像4](results/grid.png)
+
 
 とりあえず、動かしたい方は 以下へ
 # 環境構築
@@ -32,12 +32,13 @@ OSX(Mac) と Ubuntu にて CPU 動作確認
 ```shell
 python generate.py --outdir=out --trunc=1 --seeds=56,1 --network=./weights/00020-256px-animeportrait.pkl
 ```
+[画像2](results/seed0001.png)
 
 - スタイルミキシング
 ```shell
 python style_mixing.py --outdir=out --rows=85,100,75,458,1500 --cols=55,821,1789,293 --network=weights/00020-256px-animeportrait.pkl
 ```
-
+![画像4](results/grid.png)
 
 - 類似画像探索
 ```shell
@@ -45,6 +46,11 @@ python projector.py --outdir=out --target={探索したいい画像のパス} --
 ```
 
 VGG16 でレイテントを近似します。(なので時間かかります)
+
+
+<video width="256" height="256" controls>
+  <source src="results/proj.mp4" type="video/mp4">
+</video>
 
 
 

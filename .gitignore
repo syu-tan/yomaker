@@ -1,0 +1,5 @@
+# model
+*.pkl
+
+# python 
+__pycache__

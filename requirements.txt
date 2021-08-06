@@ -1,0 +1,8 @@
+torch
+click 
+requests
+tqdm
+numpy
+scipy
+imageio
+imageio-ffmpeg==0.4.3

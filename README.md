@@ -2,11 +2,12 @@
 
 - 学習途中ですが、２次元イラストを学習させたのでモデルとデモの公開
 
-![画像1](results/seed0056.png)
+![画像1](results/00024-seed0056.png)
 
 嫁画像をたくさん作るぞ〜！ってことで **yomake**
 
 GAN とかはマシンスペック求められたりするので気軽に楽しめない人のために
+
 
 
 
@@ -30,19 +31,20 @@ OSX(Mac) と Ubuntu にて CPU 動作確認
 
 - 単一画像生成
 ```shell
-python generate.py --outdir=out --trunc=1 --seeds=56,1 --network=./weights/00020-256px-animeportrait.pkl
+python generate.py --outdir=out --trunc=1 --seeds=56,1 --network=./weights/00024-256px-animeportrait.pkl
 ```
-![画像2](results/seed0001.png)
+![画像2](results/00024-seed0001.png)
 
 - スタイルミキシング
 ```shell
-python style_mixing.py --outdir=out --rows=85,100,75,458,1500 --cols=55,821,1789,293 --network=weights/00020-256px-animeportrait.pkl
+python style_mixing.py --outdir=out --rows=85,100,75,458,1500 --cols=55,821,1789,293 --network=weights/00024-256px-animeportrait.pkl
 ```
-![画像4](results/grid.png)
+![画像4](results/00024-grid.png)
 
 - 類似画像探索
 ```shell
-python projector.py --outdir=out --target={探索したいい画像のパス} --network=weights/00020-256px-animeportrait.pkl
+python projector.py --outdir=out --target={探索したいい画像のパス} --network=weights/00024
+-256px-animeportrait.pkl
 ```
 
 VGG16 でレイテントを近似します。(なので時間かかります)
@@ -85,6 +87,23 @@ https://user-images.githubusercontent.com/53329664/128550866-8b799ba2-a5e8-465e-
 
 ## アップデート
 現在学習中ですので、256px は FID は良くなります。
+
+1. 2021/08/10 にてモデルを更新しました。
+
+- 過去画像一覧
+
+    初期の seed 56,1 とスタイルミックス
+
+    ![画像1](results/seed0056.png)
+    ![画像2](results/seed0001.png)
+
+    ![画像4](results/00024-grid.png)
+
+
+
+
+
+
 
 加えて、計算資源が余っている時に 512px もうまくいけば公開します。
 

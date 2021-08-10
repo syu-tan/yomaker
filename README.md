@@ -59,7 +59,7 @@ https://user-images.githubusercontent.com/53329664/128550866-8b799ba2-a5e8-465e-
     
     [NVIDIA StyleGAN2 ADA](https://arxiv.org/abs/2006.06676)を使用
 
-    事前学習モdれるは half(floast16) で学習して CPU 実行のために float32 に重みを変換しています。
+    事前学習モデルは half(floast16) で学習して CPU 実行のために float32 に重みを変換しています。
 
 - ログ結果の表示
     ![画像3](results/logs.png)
@@ -97,7 +97,7 @@ https://user-images.githubusercontent.com/53329664/128550866-8b799ba2-a5e8-465e-
     ![画像1](results/seed0056.png)
     ![画像2](results/seed0001.png)
 
-    ![画像4](results/00024-grid.png)
+    ![画像4](results/grid.png)
 
 
 
@@ -127,14 +127,7 @@ NVIDIA にはマシンといい、モデルフレームといい大変お世話�
 
 ## Citation
 
-```
-@inproceedings{Karras2020ada,
-  title     = {Training Generative Adversarial Networks with Limited Data},
-  author    = {Tero Karras and Miika Aittala and Janne Hellsten and Samuli Laine and Jaakko Lehtinen and Timo Aila},
-  booktitle = {Proc. NeurIPS},
-  year      = {2020}
-}
-```
+[NVIDIA StyleGAN2 ADA](https://arxiv.org/abs/2006.06676)
 
 ## License
 
